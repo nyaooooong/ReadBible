@@ -72,7 +72,6 @@ function handleXML(xml) {
 			var verse = entry.getElementsByTagName('verse')[0].firstChild.data;
 			row.innerHTML += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
 			*/
-		}
 
 		document.getElementById("table").appendChild(row);
 	}
