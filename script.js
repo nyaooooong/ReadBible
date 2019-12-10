@@ -43,7 +43,7 @@ function handleXML(xml) {
 		var entryCount = entries[i].childNodes.length
 		var entry = entries[i].firstChild;
 		for (j = 0; j < entryCount; j++) {
-			if (entry.nodeType == ELEMENT_NODE) {
+			if (entry.nodeType == 1) { /* 1 means ELEMENT_NODE */
 				var book = entry.getAttribute('book');
 				var chapter = entry.getAttribute('chapter');
 				var verse = entry.getAttribute('verse');
