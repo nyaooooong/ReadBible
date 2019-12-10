@@ -50,10 +50,10 @@ function handleXML(xml) {
 				var verse = entry.getAttribute('verse');
 				if (verse === '0') {
 					if (book === '19') {
-						row.innerHTML += '<td>' + bookNames[book-1].getAttribute('Korean-short') + ' ' + chapter'편</td>';
+						row.innerHTML += '<td>' + bookNames[book-1].getAttribute('Korean-short') + ' ' + chapter + '편</td>';
 					}
 					else {
-						row.innerHTML += '<td>' + bookNames[book-1].getAttribute('Korean-short') + ' ' + chapter'장</td>';
+						row.innerHTML += '<td>' + bookNames[book-1].getAttribute('Korean-short') + ' ' + chapter + '장</td>';
 					}
 				}
 				else {
