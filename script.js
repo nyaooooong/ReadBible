@@ -5,7 +5,7 @@ function loadDoc() {
 	var req = new XMLHttpRequest();
 	req.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			myFunction(this);
+			handleXML(this);
 		}
 	};
 	req.open("GET", "navigator.xml", true);
@@ -31,7 +31,7 @@ function setTableHeader() {
 	document.getElementById("table").appendChild(header);
 }
 
-function myFunction(xml) {
+function handleXML(xml) {
 	var i, j;
 	var xmlDoc = xml.responseXML;
 
@@ -41,6 +41,12 @@ function myFunction(xml) {
 		var row = document.createElement('tr');
 		row.innerHTML = '<td>' + day + '</td>';
 		for (j = 0; j < 4; j++) {
+			var entry = entries[i].childNodes[j];
+			var book = entry.getAttribute('book');
+			var chapter = entry.getAttribute('chapter');
+			var verse = entry.getAttribute('verse');
+			row.innerHTML += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
+			/*
 			var entry;
 			switch(j) {
 				case 0:
@@ -60,6 +66,7 @@ function myFunction(xml) {
 			var chapter = entry.getElementsByTagName('chapter')[0].firstChild.data;
 			var verse = entry.getElementsByTagName('verse')[0].firstChild.data;
 			row.innerHTML += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
+			*/
 		}
 
 		document.getElementById("table").appendChild(row);
