@@ -35,6 +35,7 @@ function handleXML(xml) {
 	var i, j;
 	var xmlDoc = xml.responseXML;
 
+	var bookNames = xmlDoc.getElementsByTagName('book');
 	var entries = xmlDoc.getElementsByTagName('Day');
 	for (i = 0; i < entries.length; i++) {
 		var day = entries[i].getAttribute('month') + '/' + entries[i].getAttribute('day');
@@ -47,32 +48,20 @@ function handleXML(xml) {
 				var book = entry.getAttribute('book');
 				var chapter = entry.getAttribute('chapter');
 				var verse = entry.getAttribute('verse');
-				row.innerHTML += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
+				if (verse === '0') {
+					if (book === '19') {
+						row.innerHTML += '<td>' + bookNames[book-1].getAttribute('Korean-short') + ' ' + chapter'편</td>';
+					}
+					else {
+						row.innerHTML += '<td>' + bookNames[book-1].getAttribute('Korean-short') + ' ' + chapter'장</td>';
+					}
+				}
+				else {
+					row.innerHTML += '<td>' + bookNames[book-1].getAttribute('Korean-short') + ' ' + chapter + ':' + verse + '</td>';
+				}
 			}
 			entry = entry.nextSibling;
 		}
-			/*
-			var entry;
-			switch(j) {
-				case 0:
-					entry = entries[i].getElementsByTagName('The-Four-Gospels')[0];
-					break;
-				case 1:
-					entry = entries[i].getElementsByTagName('Other-New-Testament')[0];
-					break;
-				case 2:
-					entry = entries[i].getElementsByTagName('The-Books-of-Poetry')[0];
-					break;
-				case 3:
-					entry = entries[i].getElementsByTagName('Other-Old-Testament')[0];
-					break;
-			}
-			var book = entry.getElementsByTagName('book')[0].firstChild.data;
-			var chapter = entry.getElementsByTagName('chapter')[0].firstChild.data;
-			var verse = entry.getElementsByTagName('verse')[0].firstChild.data;
-			row.innerHTML += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
-			*/
-
 		document.getElementById("table").appendChild(row);
 	}
 }
