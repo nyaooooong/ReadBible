@@ -1258,13 +1258,13 @@
         </Day>
         <Day month="8" day="24">
 			<The-Four-Gospels book="42" chapter="20" verse="9-19"		/>
-			<Other-New-Testament book="57" chapter="1-11" verse="0"		/>
+			<Other-New-Testament book="57" chapter="1" verse="1-11"		/>
 			<The-Books-of-Poetry book="20" chapter="17" verse="1-14"		/>
 			<Other-Old-Testament book="17" chapter="7-8" verse="0"		/>
         </Day>
         <Day month="8" day="25">
 			<The-Four-Gospels book="42" chapter="20" verse="20-26"		/>
-			<Other-New-Testament book="57" chapter="12-25" verse="0"		/>
+			<Other-New-Testament book="57" chapter="1" verse="12-25"		/>
 			<The-Books-of-Poetry book="20" chapter="17" verse="15-28"		/>
 			<Other-Old-Testament book="17" chapter="9-10" verse="0"		/>
         </Day>
@@ -1548,7 +1548,7 @@
 			<The-Four-Gospels book="43" chapter="6" verse="60-71"		/>
 			<Other-New-Testament book="60" chapter="4" verse="1-11"		/>
 			<The-Books-of-Poetry book="22" chapter="6" verse="0"		/>
-			<Other-Old-Testament book="24" chapter="1" verse="0"		/>
+			<Other-Old-Testament book="25" chapter="1" verse="0"		/>
         </Day>
         <Day month="10" day="23">
 			<The-Four-Gospels book="43" chapter="7" verse="1-13"		/>
@@ -1690,31 +1690,31 @@
         </Day>
         <Day month="11" day="21">
 			<The-Four-Gospels book="43" chapter="12" verse="37-50"		/>
-			<Other-New-Testament book="63" chapter="1-13" verse="0"		/>
+			<Other-New-Testament book="63" chapter="1" verse="0"		/>
 			<The-Books-of-Poetry book="18" chapter="19" verse="0"		/>
 			<Other-Old-Testament book="27" chapter="3-4" verse="0"		/>
         </Day>
         <Day month="11" day="22">
 			<The-Four-Gospels book="43" chapter="13" verse="1-11"		/>
-			<Other-New-Testament book="64" chapter="1-14" verse="0"		/>
+			<Other-New-Testament book="64" chapter="1" verse="0"		/>
 			<The-Books-of-Poetry book="18" chapter="20" verse="0"		/>
 			<Other-Old-Testament book="27" chapter="5-6" verse="0"		/>
         </Day>
         <Day month="11" day="23">
 			<The-Four-Gospels book="43" chapter="13" verse="12-17"		/>
-			<Other-New-Testament book="65" chapter="1-7" verse="0"		/>
+			<Other-New-Testament book="65" chapter="1" verse="1-7"		/>
 			<The-Books-of-Poetry book="18" chapter="21" verse="1-21"		/>
 			<Other-Old-Testament book="27" chapter="7-8" verse="0"		/>
         </Day>
         <Day month="11" day="24">
 			<The-Four-Gospels book="43" chapter="13" verse="18-30"		/>
-			<Other-New-Testament book="65" chapter="8-16" verse="0"		/>
+			<Other-New-Testament book="65" chapter="1" verse="8-16"		/>
 			<The-Books-of-Poetry book="18" chapter="21" verse="22-34"		/>
 			<Other-Old-Testament book="27" chapter="9" verse="0"		/>
         </Day>
         <Day month="11" day="25">
 			<The-Four-Gospels book="43" chapter="13" verse="31-38"		/>
-			<Other-New-Testament book="65" chapter="17-25" verse="0"		/>
+			<Other-New-Testament book="65" chapter="1" verse="17-25"		/>
 			<The-Books-of-Poetry book="18" chapter="22" verse="0"		/>
 			<Other-Old-Testament book="27" chapter="10-12" verse="0"		/>
         </Day>
@@ -1788,7 +1788,7 @@
 			<The-Four-Gospels book="43" chapter="17" verse="20-26"		/>
 			<Other-New-Testament book="66" chapter="9" verse="0"		/>
 			<The-Books-of-Poetry book="18" chapter="33" verse="12-33"		/>
-			<Other-Old-Testament book="31" chapter="1-21" verse="0"		/>
+			<Other-Old-Testament book="31" chapter="1" verse="0"		/>
         </Day>
         <Day month="12" day="13">
 			<The-Four-Gospels book="43" chapter="18" verse="1-18"		/>
