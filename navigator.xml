@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
     <Navigator>
+		<Books>
+			<Book>
+			</Book>
+		</Books>
         <Day month="1" day="1">
             <The-Four-Gospels>
                 <book>40</book>
