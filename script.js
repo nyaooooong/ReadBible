@@ -40,12 +40,17 @@ function handleXML(xml) {
 		var day = entries[i].getAttribute('month') + '/' + entries[i].getAttribute('day');
 		var row = document.createElement('tr');
 		row.innerHTML = '<td>' + day + '</td>';
-		for (j = 0; j < 4; j++) {
-			var entry = entries[i].childNodes[j];
-			var book = entry.getAttribute('book');
-			var chapter = entry.getAttribute('chapter');
-			var verse = entry.getAttribute('verse');
-			row.innerHTML += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
+		var entryCount = entries[i].childNodes.length
+		var entry = entries[i].firstChild;
+		for (j = 0; j < entryCount; j++) {
+			if (entry.nodeType == ELEMENT_NODE) {
+				var book = entry.getAttribute('book');
+				var chapter = entry.getAttribute('chapter');
+				var verse = entry.getAttribute('verse');
+				row.innerHTML += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
+			}
+			entry = entry.nextSibling;
+		}
 			/*
 			var entry;
 			switch(j) {
