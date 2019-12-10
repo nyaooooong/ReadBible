@@ -16,22 +16,35 @@ function myFunction(xml) {
 	var entries = xmlDoc.getElementsByTagName('Day');
 	for (i = 0; i < entries.length; i++) {
 		var day = entries[i].getAttribute('month') + '/' + entries[i].getAttribute('day');
+		var row = '<tr>';
+		row += '<td>' + day + '</td>';
 		for (j = 0; j < 4; j++) {
-			var entry
+			var entry;
+			switch(j) {
+				case 0:
+					entry = entries[i].getElementsByTagName('The-Four-Gospels');
+					break;
+				case 1:
+					entry = entries[i].getElementsByTagName('Other-New-Testament');
+					break;
+				case 2:
+					entry = entries[i].getElementsByTagName('The-Books-of-Poetry');
+					break;
+				case 3:
+					entry = entries[i].getElementsByTagName('Other-Old-Testament');
+					break;
+			}
+			var book = entry.getElementsByTagName('book').firstChild.data;
+			var chapter = entry.getElementsByTagName('chapter').firstChild.data;
+			var verse = entry.getElementsByTagName('verse').firstChild.data;
+			row += '<td>' + book + ' ' + chapter + ':' + verse + '</td>';
 		}
-		var fourGospel = entries[i].getElementsByTagName('The-Four-Gospels');
-		var otherNew = entries[i].getElementsByTagName('Other-New-Testament');
-		var poetry = entries[i].getElementsByTagName('The-Books-of-Poetry');
-		var otherOld = entries[i].getElementsByTagName('Other-Old-Testament');
+		row += '</tr>';
 
-		document.getElementById('Day').innerHTML = day;
-		document.getElementById('FG').innerHTML = fourGospel.;
-		document.getElementById('ON').innerHTML = day;
-		document.getElementById('PO').innerHTML = day;
-		document.getElementById('OO').innerHTML = day;
-
+		document.getElementById("table").innerHTML = row;
 	}
 
+	/*
 	var gname = xmlDoc.getElementsByTagName("day")[0].firstChild.data;
 	document.getElementById("gname").innerHTML = gname;
 
@@ -50,4 +63,5 @@ function myFunction(xml) {
 			album[i].firstChild.data + "</li>\n";
 	}
 	document.getElementById("albums").innerHTML = albums;
+	*/
 }
