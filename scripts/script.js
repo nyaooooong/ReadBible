@@ -7,7 +7,7 @@ function init() {
 
 	setTableHeader();
 
-	loadXML(xmlName, handleBookNames);
+	loadXML('/xmls/bible-book-name.xml', handleBookNames);
 
 	for (i = 1; i <= 12; i++) {
 		var xmlName = '/xmls/navigator-' + i + '.xml';
