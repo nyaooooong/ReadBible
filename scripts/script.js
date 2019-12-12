@@ -2,7 +2,7 @@ var bookNames;
 
 function init() {
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/scripts/serviceworker.js');
+		navigator.serviceWorker.register('/scripts/service-worker.js');
 	}
 
 	setTableHeader();
