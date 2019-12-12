@@ -3,18 +3,29 @@
   <head>
     <title>ReadBible by Navigator</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Progressive Web App progressing">
+    <meta name="theme-color" content="#3E4EB8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/icons/menu_book-512px.png">
+
+    <link rel="shortcut icon" href="/icons/menu_book-48px.png">
+    <link rel="manifest" href="readbible.webmanifest">
+	
+    <!-- Below 4 lines For Safari. Apple needs non transparent icon unlike android -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="ReadBible">
+    <link rel="apple-touch-icon" href="/icons/menu_book-48px.png">
     
     <!-- import the webpage's stylesheet 
     <link rel="stylesheet" href="/style.css">
     -->
-    <!-- import the webpage's javascript file --> 
-    <script src="/script.js" defer></script> 
   </head>  
-  <body onload="loadDoc();">
+  <body onload="init();">
 	  <h1>Read Bible by Navigator</h1>
 	  <table id='table'>
 	  </table>
+	  <!-- import the webpage's javascript file --> 
+	  <script src="/scripts/script.js" defer></script> 
   </body>
 </html>

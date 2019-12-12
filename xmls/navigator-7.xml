@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Navigator>
+	<Day month="7" day="1">
+		<The-Four-Gospels book="42" chapter="7" verse="11-17"		/>
+		<Other-New-Testament book="51" chapter="1" verse="1-14"		/>
+		<The-Books-of-Poetry book="19" chapter="123-124" verse="0"	/>
+		<Other-Old-Testament book="13" chapter="1-2" verse="0"		/>
+	</Day>
+	<Day month="7" day="2">
+		<The-Four-Gospels book="42" chapter="7" verse="18-35"		/>
+		<Other-New-Testament book="51" chapter="1" verse="15-29"	/>
+		<The-Books-of-Poetry book="19" chapter="125" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="3-4" verse="0"		/>
+	</Day>
+	<Day month="7" day="3">
+		<The-Four-Gospels book="42" chapter="7" verse="36-50"		/>
+		<Other-New-Testament book="51" chapter="2" verse="1-7"		/>
+		<The-Books-of-Poetry book="19" chapter="126" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="5-6" verse="0"		/>
+	</Day>
+	<Day month="7" day="4">
+		<The-Four-Gospels book="42" chapter="8" verse="1-15"		/>
+		<Other-New-Testament book="51" chapter="2" verse="8-15"		/>
+		<The-Books-of-Poetry book="19" chapter="127" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="7-9" verse="0"		/>
+	</Day>
+	<Day month="7" day="5">
+		<The-Four-Gospels book="42" chapter="8" verse="16-25"		/>
+		<Other-New-Testament book="51" chapter="2" verse="16-23"	/>
+		<The-Books-of-Poetry book="19" chapter="128" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="10-11" verse="0"	/>
+	</Day>
+	<Day month="7" day="6">
+		<The-Four-Gospels book="42" chapter="8" verse="26-39"		/>
+		<Other-New-Testament book="51" chapter="3" verse="1-14"		/>
+		<The-Books-of-Poetry book="19" chapter="129" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="12-14" verse="0"	/>
+	</Day>
+	<Day month="7" day="7">
+		<The-Four-Gospels book="42" chapter="8" verse="40-56"		/>
+		<Other-New-Testament book="51" chapter="3" verse="15-25"	/>
+		<The-Books-of-Poetry book="19" chapter="130-131" verse="0"	/>
+		<Other-Old-Testament book="13" chapter="15-16" verse="0"	/>
+	</Day>
+	<Day month="7" day="8">
+		<The-Four-Gospels book="42" chapter="9" verse="1-17"		/>
+		<Other-New-Testament book="51" chapter="4" verse="1-9"		/>
+		<The-Books-of-Poetry book="19" chapter="132" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="17-19" verse="0"	/>
+	</Day>
+	<Day month="7" day="9">
+		<The-Four-Gospels book="42" chapter="9" verse="18-27"		/>
+		<Other-New-Testament book="51" chapter="4" verse="10-18"	/>
+		<The-Books-of-Poetry book="19" chapter="133-134" verse="0"	/>
+		<Other-Old-Testament book="13" chapter="20-22" verse="0"	/>
+	</Day>
+	<Day month="7" day="10">
+		<The-Four-Gospels book="42" chapter="9" verse="28-36"		/>
+		<Other-New-Testament book="52" chapter="1" verse="0"		/>
+		<The-Books-of-Poetry book="19" chapter="135" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="23-25" verse="0"	/>
+	</Day>
+	<Day month="7" day="11">
+		<The-Four-Gospels book="42" chapter="9" verse="37-50"		/>
+		<Other-New-Testament book="52" chapter="2" verse="1-9"		/>
+		<The-Books-of-Poetry book="19" chapter="136" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="26-28" verse="0"	/>
+	</Day>
+	<Day month="7" day="12">
+		<The-Four-Gospels book="42" chapter="9" verse="51-62"		/>
+		<Other-New-Testament book="52" chapter="2" verse="10-20"	/>
+		<The-Books-of-Poetry book="19" chapter="137" verse="0"		/>
+		<Other-Old-Testament book="13" chapter="29" verse="0"		/>
+	</Day>
+	<Day month="7" day="13">
+		<The-Four-Gospels book="42" chapter="10" verse="1-16"		/>
+		<Other-New-Testament book="52" chapter="3" verse="1-6"		/>
+		<The-Books-of-Poetry book="19" chapter="138" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="1-2" verse="0"		/>
+	</Day>
+	<Day month="7" day="14">
+		<The-Four-Gospels book="42" chapter="10" verse="17-24"		/>
+		<Other-New-Testament book="52" chapter="3" verse="7-13"		/>
+		<The-Books-of-Poetry book="19" chapter="139" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="3-5" verse="0"		/>
+	</Day>
+	<Day month="7" day="15">
+		<The-Four-Gospels book="42" chapter="10" verse="25-37"		/>
+		<Other-New-Testament book="52" chapter="4" verse="1-10"		/>
+		<The-Books-of-Poetry book="19" chapter="140" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="6-7" verse="0"		/>
+	</Day>
+	<Day month="7" day="16">
+		<The-Four-Gospels book="42" chapter="10" verse="38-42"		/>
+		<Other-New-Testament book="52" chapter="4" verse="11-18"	/>
+		<The-Books-of-Poetry book="19" chapter="141" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="8-9" verse="0"		/>
+	</Day>
+	<Day month="7" day="17">
+		<The-Four-Gospels book="42" chapter="11" verse="1-13"		/>
+		<Other-New-Testament book="52" chapter="5" verse="1-11"		/>
+		<The-Books-of-Poetry book="19" chapter="142" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="10-12" verse="0"	/>
+	</Day>
+	<Day month="7" day="18">
+		<The-Four-Gospels book="42" chapter="11" verse="14-28"		/>
+		<Other-New-Testament book="52" chapter="5" verse="12-28"	/>
+		<The-Books-of-Poetry book="19" chapter="143" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="13-16" verse="0"	/>
+	</Day>
+	<Day month="7" day="19">
+		<The-Four-Gospels book="42" chapter="11" verse="29-36"		/>
+		<Other-New-Testament book="53" chapter="1" verse="1-7"		/>
+		<The-Books-of-Poetry book="19" chapter="144" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="17-19" verse="0"	/>
+	</Day>
+	<Day month="7" day="20">
+		<The-Four-Gospels book="42" chapter="11" verse="37-54"		/>
+		<Other-New-Testament book="53" chapter="1" verse="8-12"		/>
+		<The-Books-of-Poetry book="19" chapter="145" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="20-21" verse="0"	/>
+	</Day>
+	<Day month="7" day="21">
+		<The-Four-Gospels book="42" chapter="12" verse="1-12"		/>
+		<Other-New-Testament book="53" chapter="2" verse="1-12"		/>
+		<The-Books-of-Poetry book="19" chapter="146" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="22-24" verse="0"	/>
+	</Day>
+	<Day month="7" day="22">
+		<The-Four-Gospels book="42" chapter="12" verse="13-21"		/>
+		<Other-New-Testament book="53" chapter="2" verse="13-17"	/>
+		<The-Books-of-Poetry book="19" chapter="147" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="25-27" verse="0"	/>
+	</Day>
+	<Day month="7" day="23">
+		<The-Four-Gospels book="42" chapter="12" verse="22-34"		/>
+		<Other-New-Testament book="53" chapter="3" verse="1-5"		/>
+		<The-Books-of-Poetry book="19" chapter="148" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="28-29" verse="0"	/>
+	</Day>
+	<Day month="7" day="24">
+		<The-Four-Gospels book="42" chapter="12" verse="35-48"		/>
+		<Other-New-Testament book="53" chapter="3" verse="6-13"		/>
+		<The-Books-of-Poetry book="19" chapter="149" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="30-33" verse="0"	/>
+	</Day>
+	<Day month="7" day="25">
+		<The-Four-Gospels book="42" chapter="12" verse="49-59"		/>
+		<Other-New-Testament book="53" chapter="3" verse="14-18"	/>
+		<The-Books-of-Poetry book="19" chapter="150" verse="0"		/>
+		<Other-Old-Testament book="14" chapter="34-36" verse="0"	/>
+	</Day>
+</Navigator>
