@@ -1,10 +1,11 @@
 var cacheName = 'readbible-v1';
 var appShellFiles = [
 	'/index.html',
-	'/scripts/script.js',
-	'/scripts/service-worker.js',
+	'/script.js',
+	'/service-worker.js',
 	'/icons/menu_book-32px.png',
 	'/icons/menu_book-48px.png',
+	'/icons/menu_book-48px_bg.png',
 	'/icons/menu_book-64px.png',
 	'/icons/menu_book-96px.png',
 	'/icons/menu_book-128px.png',
@@ -15,6 +16,7 @@ var appShellFiles = [
 ];
 
 var contentFiles = [
+	'/xmls/bible-book-name.xml',
 	'/xmls/navigator-1.xml',
 	'/xmls/navigator-2.xml',
 	'/xmls/navigator-3.xml',

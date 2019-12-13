@@ -2,20 +2,29 @@ var bookNames;
 
 function init() {
 	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/scripts/service-worker.js');
+		navigator.serviceWorker.register('/service-worker.js');
 	}
 
 	setTableHeader();
 
-	loadXML('/xmls/bible-book-name.xml', handleBookNames);
+	try {
+		handleBookNames(loadXML('/xmls/bible-book-name.xml'));
+	} catch (e) {
+		console.log('handleBookNames error :', e);
+	}
 
 	for (i = 1; i <= 12; i++) {
 		var xmlName = '/xmls/navigator-' + i + '.xml';
-		loadXML(xmlName, handleNavigator);
+		try {
+			handleNavigator(loadXML(xmlName));
+		} catch (e) {
+			console.log('handleNavigator error :', e);
+		}
 	}
 }
 
 function loadXML(xmlName, xmlHandler) {
+	/*
 	var req = new XMLHttpRequest();
 	req.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
@@ -24,6 +33,9 @@ function loadXML(xmlName, xmlHandler) {
 	};
 	req.open("GET", xmlName, true);
 	req.send();
+	*/
+	var res = await fetch(xmlName);
+	return (new window.DOMParser()).parseFromString(await response.text(), 'text/xml');
 }
 
 function setTableHeader() {
