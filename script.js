@@ -13,7 +13,7 @@ async function init() {
 		console.log('handleBookNames error :', e);
 	}
 
-	for (i = 1; i <= 12; i++) {
+	for (var i = 1; i <= 12; i++) {
 		var xmlName = '/xmls/navigator-' + i + '.xml';
 		try {
 			handleNavigator(await loadXML(xmlName));
@@ -25,7 +25,7 @@ async function init() {
 
 async function loadXML(xmlName, xmlHandler) {
 	var res = await fetch(xmlName);
-	return (new window.DOMParser()).parseFromString(await response.text(), 'text/xml');
+	return (new window.DOMParser()).parseFromString(await res.text(), 'text/xml');
 }
 
 function setTableHeader() {
