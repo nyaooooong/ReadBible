@@ -1,6 +1,6 @@
 var bookNames;
 
-function init() {
+async function init() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.register('/service-worker.js');
 	}
@@ -8,7 +8,7 @@ function init() {
 	setTableHeader();
 
 	try {
-		handleBookNames(loadXML('/xmls/bible-book-name.xml'));
+		handleBookNames(await loadXML('/xmls/bible-book-name.xml'));
 	} catch (e) {
 		console.log('handleBookNames error :', e);
 	}
@@ -16,24 +16,14 @@ function init() {
 	for (i = 1; i <= 12; i++) {
 		var xmlName = '/xmls/navigator-' + i + '.xml';
 		try {
-			handleNavigator(loadXML(xmlName));
+			handleNavigator(await loadXML(xmlName));
 		} catch (e) {
 			console.log('handleNavigator error :', e);
 		}
 	}
 }
 
-function loadXML(xmlName, xmlHandler) {
-	/*
-	var req = new XMLHttpRequest();
-	req.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			xmlHandler(this);
-		}
-	};
-	req.open("GET", xmlName, true);
-	req.send();
-	*/
+async function loadXML(xmlName, xmlHandler) {
 	var res = await fetch(xmlName);
 	return (new window.DOMParser()).parseFromString(await response.text(), 'text/xml');
 }
@@ -58,15 +48,13 @@ function setTableHeader() {
 }
 
 function handleBookNames(xml) {
-	var xmlDoc = xml.responseXML;
-	var bookNames = xmlDoc.getElementsByTagName('book');
+	bookNames = xml.getElementsByTagName('book');
 }
 
 function handleNavigator(xml) {
 	var i, j;
-	var xmlDoc = xml.responseXML;
 
-	var entries = xmlDoc.getElementsByTagName('Day');
+	var entries = xml.getElementsByTagName('Day');
 	for (i = 0; i < entries.length; i++) {
 		var day = entries[i].getAttribute('month') + '/' + entries[i].getAttribute('day');
 		var row = document.createElement('tr');

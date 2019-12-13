@@ -12,7 +12,8 @@ var appShellFiles = [
 	'/icons/menu_book-168px.png',
 	'/icons/menu_book-192px.png',
 	'/icons/menu_book-256px.png',
-	'/icons/menu_book-512px.png'
+	'/icons/menu_book-512px.png',
+	'/icons/menu_book-512px_bg.png'
 ];
 
 var contentFiles = [
