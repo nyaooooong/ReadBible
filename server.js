@@ -12,11 +12,13 @@ function startServer() {
 
 	// Redirect HTTP to HTTPS,
 	app.use((req, resp, next) => {
-		if (!req.secure) {
+		if (req.secure || req.get('X-Forwarded-Proto').indexOf("https") != -1) {
+			next();
+		}
+		else {
 			console.log('Redirect to HTTPS');
 			return resp.redirect('https://' + req.headers.host + req.url);
 		}
-		next();
 	});
 
 	// Logging for each request
