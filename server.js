@@ -11,8 +11,13 @@ function startServer() {
 	const app = express();
 
 	// Redirect HTTP to HTTPS,
+	// Enable reverse proxy support in Express. This causes the
+	// the "X-Forwarded-Proto" header field to be trusted so its
+	// value can be used to determine the protocol. See 
+	// http://expressjs.com/api#app-settings for more details.
+	app.enable('trust proxy');
 	app.use((req, resp, next) => {
-		if (req.secure || req.get('X-Forwarded-Proto').indexOf("https") != -1) {
+		if (req.secure) {
 			next();
 		}
 		else {
