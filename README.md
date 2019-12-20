@@ -14,6 +14,8 @@
 <br/> HTTP redirect를 위해서는 server(nginx) 설정을 변경해야 하지만 glitch console에서는 sudo 가 안먹힘.
 <br/> node.js의 express를 사용해서 http to https redirect를 구현한 소스를 확인 --> express를 사용하도록 변경 시작.
 <br/> app 처럼 menu bar가 나오도록 추가. (CSS를 사용하면 text만으로 상당히 멋있는 menu bar를 만들 수 있음.)
+- 12.15 :
+<br/> express 를 적용해서 http to https redirect를 구현했다. app.enable('trust proxy');를 사용하여 req.secure를 적용했다. 여기까지 version 1.0으로 한다.
 
 ## 참고자료
 + pwa sample : 
