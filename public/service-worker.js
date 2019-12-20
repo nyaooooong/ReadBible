@@ -3,6 +3,7 @@ var appShellFiles = [
 	'/index.html',
 	'/script.js',
 	'/service-worker.js',
+	'/css/index.css',
 	'/icons/menu_book-32px.png',
 	'/icons/menu_book-48px.png',
 	'/icons/menu_book-48px_bg.png',

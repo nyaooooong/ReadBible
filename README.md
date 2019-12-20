@@ -16,6 +16,14 @@
 <br/> app 처럼 menu bar가 나오도록 추가. (CSS를 사용하면 text만으로 상당히 멋있는 menu bar를 만들 수 있음.)
 - 12.15 :
 <br/> express 를 적용해서 http to https redirect를 구현했다. app.enable('trust proxy');를 사용하여 req.secure를 적용했다. 여기까지 version 1.0으로 한다.
+- 12.17 :
+<br/> menu bar 적용
+- 12.20 :
+<br/> branch 적용. master, develop, feature, release.
+<br/> master와 develop을 main branch로 하고 feature를 sub branch로 한다.
+<br/> feature 에서 개발된 내용을 develop에 merge하고 여기서 debugging이 끝난 내용을 master에 merge한다.
+<br/> menu bar 내용을 feature branch 로 빼낸다.
+
 
 ## 참고자료
 + pwa sample : 
@@ -32,3 +40,5 @@
 <br/> https://medium.com/level-up-web/20-responsive-navigation-solutions-examples-codes-21644390afeb
 + menu bar sample :
 <br/> https://inspirationalpixels.com/creating-a-responsive-menu-with-html-css-jquery/
++ Git 설명
+<br/> https://backlog.com/git-tutorial/kr/

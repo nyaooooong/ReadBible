@@ -6,6 +6,7 @@ async function init() {
 	}
 
 	setTableHeader();
+	handleCSS();
 
 	try {
 		handleBookNames(await loadXML('/xmls/bible-book-name.xml'));
@@ -21,6 +22,14 @@ async function init() {
 			console.log('handleNavigator error :', e);
 		}
 	}
+}
+
+function handleCSS() {
+	document.querySelector('toggle-nav').addEventListener('click', (e) => {
+		this.classList.toggle('active');
+		document.querySelect('menu.ul').classList.toggle('active');
+		e.preventDefault();
+	});
 }
 
 async function loadXML(xmlName, xmlHandler) {
