@@ -17,7 +17,7 @@ function startServer() {
 	// http://expressjs.com/api#app-settings for more details.
 	app.enable('trust proxy');
 	app.use((req, resp, next) => {
-		if (req.secure) {
+		if (req.secure || req.headers.host === 'localhost:8000') {
 			next();
 		}
 		else {

@@ -1,4 +1,4 @@
-var cacheName = 'readbible-v1';
+var cacheName = 'readbible-v1.1';
 var appShellFiles = [
 	'/index.html',
 	'/script.js',
